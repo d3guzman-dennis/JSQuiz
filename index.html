@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Java Script Quiz</title>
+</head>
+
+<body>
+       <!--High Scores and Timer -->
+    <div class="container" id="mainScr">
+      <div class="row">
+          <div class="col">
+            <!--High Score Link-->
+            <a href="hiScore">View high scores</a>
+          </div>
+          <div class="col" id="timer">  
+            <!-- Timer display -->
+      
+            <p id="countdown"></p>
+          </div>  
+      </div>
+    </div>
+ 
+    <div id="space">
+        <div class="container" id="startScr">
+            <div class="card" style="width: 35rem; text-align:center">
+              <div class="card-body">
+              <h2 class="card-title">Coding Quiz Challenge</h2>
+              <p class="card-text">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalkize your score/time by 10 seconds!</p>
+              
+              <a href="#" class="btn btn-primary" id="start">Start Quiz</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div id="space2">
+        <div class="container" id="hiScore">
+            <div class="card" style="width: 35rem; text-align:left">
+                <div class="card-body">
+                <h2 class="card-title">All done!</h2>
+                <p class="card-text" id="mySkor"></p>
+                <form method="POST">
+                    <div class="input-group">
+                      <label for="playerInit">Enter Initials:&nbsp;&nbsp; </label>
+                      <input
+                        type="text"
+                        name="namInit"
+                        id="myInit"
+                        placeholder="XY"
+                      />
+                     <span><a href="#" class="btn btn-primary" id="start">Submit</a></span>
+                    </div>              
+                </form>
+                </div>
+            </div>        
+
+        </div>
+    </div>
+
+    <div id="space3">
+      <div class="container" id="topScore">
+          <div class="card" style="width: 35rem; text-align:left">
+              <div class="card-body">
+              <h2 class="card-title">Hi scores</h2>
+              <p class="card-text" id="mySkor"></p>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
